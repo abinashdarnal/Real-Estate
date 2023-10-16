@@ -1,0 +1,80 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  /* padding-top: 50px; */
+  /* padding: 0px 100px; */
+  background: #fff;
+}
+.swiper-slide:hover {
+  /* padding-top: 50px; */
+  /* padding: 0px 100px; */
+  background: rgb(55, 73, 255);
+  background: linear-gradient(
+    360deg,
+    rgba(55, 73, 255, 0.40938373640471815) 48%,
+    rgba(255, 255, 255, 0) 99%
+  );
+  transform: scale(1.0233);
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-slide img {
+  display: block;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #000;
+  font-size: 20px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 950;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transition-duration: 100ms;
+}
+
+.swiper-button-prev::after {
+  position: absolute;
+  left: 20px;
+}
+.swiper-button-next::after {
+  position: absolute;
+  right: 20px;
+}
+.swiper:hover .swiper-button-prev::after,
+.swiper:hover .swiper-button-next::after {
+  opacity: 1;
+}
